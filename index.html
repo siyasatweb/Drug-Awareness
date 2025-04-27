@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drug Awareness Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Drug Awareness</h1>
+    <nav>
+      <ul>
+        <li><a href="#types">Types of Drugs</a></li>
+        <li><a href="#cause-effect">Cause & Effect</a></li>
+        <li><a href="#prevention">Prevention</a></li>
+        <li><a href="#hotline">Hotline & Testimonies</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Types of Drugs Section -->
+  <section id="types">
+    <h2>Types of Drugs & Definitions</h2>
+    <p>Learn about the different types of drugs and their definitions.</p>
+    <button onclick="showPopUp('drugs')">Show Drug Info</button>
+    <div id="popUp-drugs" class="pop-up">
+      <span class="close" onclick="closePopUp('drugs')">X</span>
+      <p><strong>Types:</strong> Stimulants, Depressants, Hallucinogens, etc.</p>
+    </div>
+  </section>
+
+  <!-- Cause & Effect Section -->
+  <section id="cause-effect">
+    <h2>Causes and Effects</h2>
+    <p>Understand the impact of drug use on your health and life.</p>
+    <button onclick="showPopUp('effect')">Show Effect Info</button>
+    <div id="popUp-effect" class="pop-up">
+      <span class="close" onclick="closePopUp('effect')">X</span>
+      <p><strong>Causes:</strong> Peer Pressure, Mental Health Issues, Stress</p>
+      <p><strong>Effects:</strong> Addiction, Health Problems, Legal Issues</p>
+    </div>
+  </section>
+
+  <!-- Prevention Section -->
+  <section id="prevention">
+    <h2>How to Prevent Drug Use</h2>
+    <p>Discover strategies to prevent drug abuse.</p>
+  </section>
+
+  <!-- Hotline & Testimonies Section -->
+  <section id="hotline">
+    <h2>Hotline & Testimonies</h2>
+    <p>If you or someone you know is struggling, contact a hotline.</p>
+    <button onclick="showHotline()">Call 911 for Help</button>
+    <div id="hotline-popup" class="pop-up">
+      <span class="close" onclick="closeHotline()">X</span>
+      <p><strong>Hotline:</strong> 1-800-662-HELP</p>
+      <p>Testimonial: "I overcame addiction through support!"</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Drug Awareness</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
